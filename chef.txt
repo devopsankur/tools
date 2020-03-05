@@ -1,0 +1,96 @@
+what is chef?
+==============
+A)-chef is an automation platform that configures and manages your infrastructure 
+whether infrastructure it is on-premises or in the cloud.
+B)-it turns your infrastructure as code i.e  your computing environment has some of 
+the same attributes as your application.
+   -your infrastructure is versionable
+   -your infrastructure is repeatable
+   -your infrastructure is testable
+C)-You only need to tell chef what the desired configuration should be, not how to achieve it.
+
+Note:
+-----
+How chef is smart ?
+scenario: if we have to install apache in windows, redhat, ubuntu so for installation apache 
+in these different platform different commands should be used. 
+how chef helps: we have to tell chef hey i have to install apache. no need to tell how to 
+install chef is smart it will install.
+
+The chef Solution:
+==================
+Nodes:
+============
+-Nodes are the actual servers(blocks) where you want to apply configuration.
+-Nodes are the ends point
+
+Chef Server:
+============
+-Deploy configuration to chef server
+
+Local Workstation:
+==================
+-Laptop/desktop should be Workstation.
+-i will write chef configure in Workstation
+(Write code that describes the state of a node)
+
+Chef tools and ternimologies:
+=============================
+
+Chef Workstation: 
+*****************
+The location from which users do most of their work.
+
+Node:
+*********
+A node is any machine that is under management by Chef.
+  -physical
+  -Virtual
+  -cloud
+  -network device etc.
+
+Chef Server:
+************
+Acts as a hub for configuration data and store cookbooks, policies that are applied to Nodes
+and related metadata. 
+
+Chef Client:
+************
+An agent that runs locally on every node that is under management by Chef to bring the node
+into the expected state.
+
+Knife:
+***********
+Tool that provides an interface between a local chef-repo and the chef server and help users 
+to manage.
+  -Nodes, Cookbooks, Recipes , Roles, environment
+
+Ohio:
+***********
+Tool that is used to detect attributes on a node, and then provide these attributes to the 
+chef client at the start of every chef-cleint run
+-Platform and Network details
+-CPU data and kernel data 
+-Memory usage & other configuration details
+
+Resources:
+***********
+Resources is anything you want to change/configure in the host.
+-Files
+-Dirs 
+-Users & Groups
+-Packages and Services
+
+Recipe:
+***********
+Resources are gathered in to a file which is called as recipe which ensures the system is in
+desired state. 
+-Domain specific language(DSL) used by Chef & are actually just a subset of Ruby.
+
+Cookbook:
+***********
+The fundamental unit of configuration and policy distribution
+-Each cookbook defines a scenario, such as everything needed to install and configure MYSQL
+-Then it containes all the components that are required to support that scenario.
+
+
