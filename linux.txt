@@ -1,0 +1,127 @@
+System:
+=======
+1. uname :: display Linux system information
+2. uname -r :: display kernel release information
+3. uptime ::have been running including load average
+4. hostname :: shows the system hostname
+5. hostname -i :: Displays the IP address of the system
+6. last reboot :: Shows system reboot history
+7. date :: Displays current system date and time
+8. timedatectl :: Query and change the system clock
+9. cal :: Display the current calendar month and day 
+10. w :: Display currently logged in users in the System
+11. whoami :: Display who you are logged in as 
+12. finger username :: Display information about the user
+
+Hardware:
+=========
+1. dmesg :: display bootup messages
+
+2. cat /proc/cpuinfo :: display more information about CPU 
+   eg. model, model name, cores, vender id
+
+3. cat /proc/meminfo :: Display more information about hardware memory 
+   e.g: total and free memory
+
+4. lshw :: Display system hardware configuration  
+5. lsblk :: Display block devices related information
+6. free -m :: Display free and used memory in the system(in MB)
+7. lspci -tv :: Display pci devices in a tree like diagram
+8. lsusb -tv :: Display USB devices in a tree like diagram 
+9. dmidecode :: Display hardware information from the bios
+10. hdparm -i /dev/xda :: Display information about disk data
+
+Users:
+=========
+1. id :: Displays the details of the active user eg. uid,gid and groups
+2. last :: show the last login in the system
+3. who :: shows who is logged in the system 
+4. groupadd "admin" :: Add the group admin 
+5. adduser "ankur" :: Add user ankur 
+6. userdel "ankur" :: Deletes user ankur 
+7. usermod :: used for changing /modifying user information 
+
+file commands:
+==============
+1. ls -al :: list files both regular and hidden files and their permission as well. 
+2. pwd :: displays the current directory file path 
+3. mkdir <directory_name> :: ceate a new directory 
+4. rm file_name :: remove a file 
+5. rm -f file_name :: forcefully remove a file 
+6. rm -r <directory_name> :: remove a directory recursively 
+7. rm -rf <directory_name> :: remove a directory forcefully and recursively
+8. cp file1 file2 :: copy the content of file1 to file2
+
+
+
+
+1.ls - list all files
+   ls -R list all directory and files recursively
+   ls -a list all files with hidden files
+   ls -t
+   ls -l list files with current permissions
+2.pwd -print working directory
+3.cd -change directory
+4.mkdir - make directory
+5.touch - create blank file
+6.mv - move file from one location to another location
+  mv 1.txt folder/
+7.cp - copy from one location to another location
+  cp 2.txt this/
+  you can also use full path
+8.update softwares:- it will update the list of softwares installed in system with latest version
+   sudo apt-get update
+9.upgrade softwares:- it will install with latest version available
+10.history - show all history
+11.echo ankur
+12.printf "this is helloworld"
+13.ipconfig - check device is communicating or not
+14. fire multiple commands
+    apt-get update && upgrade
+15. rm  -remove file
+16. rmdir -remove directory
+17. man - for help any commands
+18. 
+
+================
+1. uname
+   uname ==>Linux
+   uname -r
+   uname -a
+2. ls
+3. cd 
+4. ~ for root directory
+5. / for user directory
+6. ls -l : list all permission
+7. change permission:
+   chmod 
+==============
+
+
+
+users in Linux:
+---------------
+1. Regular user: home directory
+2. Root user/Super user - Full access
+3. service user
+
+linux is case senstive
+
+
+$ as regular user
+# as root user
+
+for activate super user power:
+------------------------------
+sudo su-
+
+Absolute vs Relative Path:
+---------------------------
+
+
+
+
+
+
+
+
