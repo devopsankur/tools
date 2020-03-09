@@ -1,0 +1,76 @@
+Jenkins -continous integration tool, it runs with apache tomcat
+port used : 8080
+Help Article:
+-------------
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-18-04
+
+for change home directory::
+https://dzone.com/articles/jenkins-02-changing-home-directory
+
+change home directory:
+Update the new Jenkins home directory path in /etc/default/jenkins.
+# jenkins home location
+JENKINS_HOME=/home/new_home
+
+Step1: Install jenkins:
+=======================
+
+pre-requistie: 
+
+java8 installed
+
+1.First, add the repository key to the system:
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+
+2.append the Debian package repository address to the server’s sources.list:
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+3.sudo apt update
+4.sudo apt install jenkins
+
+Step2: Starting Jenkins
+==============================
+sudo systemctl start jenkins
+
+check jenkins service status:
+sudo systemctl status jenkins
+
+Step3: Opening the firewall
+==============================
+sudo ufw allow 8080
+
+Note:
+If the firewall is inactive, the following commands 
+will allow OpenSSH and enable the firewall:
+sudo ufw allow OpenSSH
+sudo ufw enable
+
+Step4: Setting up jenkins
+==============================
+http://your_server_ip_or_domain:8080
+
+first time jenkins unlock
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+This is one time password. later you can change password.
+
+Overview of jenkins:
+====================
+
+1. Freestyle project: 
+   ==================
+   This is the central feature of jenkins. jenkins will build your project,combining any 
+   SCM with any build system, and this can be even used for something other than software 
+   build.
+
+2. Pipeline:
+   ====================
+3. Multi-configuartion project
+4. folder
+5. github organization
+6. multibranch Pipeline
+
+
+
+
+
