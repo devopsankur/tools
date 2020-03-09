@@ -1,0 +1,12 @@
+Mandatory to have worked/Implemented on one or more of the following.
+1.	Requirement management : Bugzilla, Jira
+2.	Source code Management: SVN, Git, P4, HG
+3.	Repository Hosting system: GitHub, GitLab, Bit bucket.
+4.	Code Review : Gerrit, GitLab, ReviewBoard
+5.	Ci/Cd : Jenkins, GitLab, AWS, Azure
+6.	Containers: Docker, Virtual Box, podman
+7.	Container Orchestration:  Docker Swarm, Kubernetes, Amazon ECS, Azure Container Service, DC/OS
+8.	Scripting: Shell, Python, Perl
+9.	Configuration Management : Ansible, Cheff, Puppet
+10. Cloud native Devops services for AWS and Azure 
+11. Infrastructure automation based on CloudFormation, ARM templates
